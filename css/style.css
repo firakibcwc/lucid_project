@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .5px;
+}
+
+/* Header section starts from here */
+header {
+    background-image: url(../images/hero-bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-row {
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-link {}
+
+.nav-item a {
+    color: #fffefe;
+    font-size: 16px;
+    transition: .4s all ease-in-out;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a:focus {
+    color: #fffefe;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #008ed6;
+    height: 2px;
+    width: 100%;
+    z-index: 5;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+
+.nav-item a:hover::after {
+    opacity: 1;
+}
+
+/* Header section end here */
+/* Banner starts from here */
+.banner {
+    align-items: center;
+    position: relative;
+    padding: 100px 0 140px;
+}
+
+.banner h4 {
+    color: #008ed6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 25px;
+}
+
+.banner p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.banner .banner-btn {
+    margin-top: 50px;
+}
+
+.btn-blue {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #008ed6;
+    margin-right: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+}
+
+.banner-btn a:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff2a;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-img img {
+    max-width: 480px;
+}
+
+/* Banner end here */
+/* Features Section starts here */
+.features {
+    padding: 60px 0;
+}
+
+.features-row {
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.s-h4 {
+    color: #008ed6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.s-h1 {
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+
+.s-span {
+    background-color: #008ed6;
+    height: 2px;
+    width: 60px;
+    margin: auto;
+    display: block;
+}
+
+.s-h2 {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.s-p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.features .icon {
+    height: 75px;
+    width: 75px;
+    border: 1px solid #999999;
+    border-radius: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features .icon i {
+    font-size: 25px;
+    width: 45px;
+    color: #008ed6;
+    text-align: center;
+}
+
+/* Features Section end here */
+/* Device Section starts here */
+.device {
+    border-top: 1px solid #9999991a;
+}
+
+.device-row {
+    align-items: center;
+}
+
+.device img {
+    width: 480px;
+    margin-top: 60px;
+}
+
+.device ul {
+    list-style: none;
+}
+
+.device ul li {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+}
+.device ul li .device-icons{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.device ul li .device-icons i{
+    color: #008ed6;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.device ul li p{
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.t-left {
+    text-align: left;
+}
+
+/* Device Section end here */
+/* Customize Section starts here */
+.customize {
+    padding: 60px 0 30px;
+    background-color: #f2f2f2;
+}
+
+.customize-row {
+    align-items: center;
+}
+
+
+.customize img {}
+
+/* Customize Section end here */
+/* Testimonial Section starts here */
+.testimonials {
+    padding: 60px 0;
+    background-image: url(../images/pricing-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial-contents {}
+
+.feedback p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: italic;
+    color: #fff;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client .client-avatar {}
+
+.client .client-avatar img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.client .client-info {
+    margin-left: 10px;
+}
+
+.client .client-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.client .client-info p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.owl-dots .owl-dot span{
+    border: 1px solid #fff;
+    margin: 10px;
+    border-radius: 50%;
+    width: 8px !important;
+    height: 8px !important;
+    display: block !important;
+}
+.owl-dots .active span{
+    margin: 10px;
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    display: block !important;
+    background: #fff;
+}
+
+
+
+
+
+
+
+/* Testimonial Section end here */
+/* CTA Section starts here */
+.cta {
+    padding: 35px 0;
+    background-color: #15141a;
+}
+
+.cta h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.cta span {
+    font-weight: 300;
+}
+
+.cta-btn {
+    text-align: right;
+}
+
+.btn-blue2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #008ed6;
+    margin-left: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+}
+
+.cta-btn a:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff2a;
+}
+
+/* CTA Section end here */
+/* Pricing & Plan Section starts here */
+.pricing {
+    padding: 60px 0;
+}
+
+.plan-box {
+    border: 1px solid #e0e0e0;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-name {
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.plan-box .plan-name h2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-pricing {
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-pricing h1 {
+    font-size: 58px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-pricing sup {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.plan-box .plan-pricing p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-info {
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.plan-box .plan-info p {
+    color: #999999;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.plan-box .plan-info span {
+    color: #008ed6;
+}
+
+.plan-box .plan-info .btn-order {
+    display: block;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 12px 25px;
+    margin: auto;
+    background: transparent;
+    transition: .4s all ease-in-out;
+}
+
+.plan-box .plan-info .btn-order a {
+    color: #008ed6;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    transition: .4s all ease-in-out;
+}
+
+/* Plan Hover Styles */
+.plan-box:hover .plan-name h2 {
+    color: #008ed6;
+}
+
+.plan-box:hover .plan-pricing {
+    background-color: #008ed6;
+}
+
+.plan-box:hover .plan-pricing h1,
+.plan-box:hover .plan-pricing p {
+    color: #fff;
+}
+
+.plan-box:hover .plan-info .btn-order {
+    background-color: #008ed6;
+    border: 1px solid transparent;
+}
+
+.plan-box:hover .plan-info .btn-order a {
+    color: #fff;
+}
+
+/* Pricing & Plan Section end here */
+.contact {
+    padding: 60px 0 350px;
+    background-color: #ededed;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact ul .contact-icons {
+    margin-bottom: 15px;
+    color: #008ed6;
+    font-size: 25px;
+}
+
+.contact ul li {
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Contact Form Style Starts from here */
+.contact-form {
+    background-color: #15141a;
+    position: absolute;
+    bottom: -420px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+
+.contact-info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 30px 30px 40px;
+}
+
+.contact-info .d-flex {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info input {
+    outline: none;
+    border: 1px solid #444348;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444348;
+    padding: 10px 10px;
+    display: block;
+    height: 55px;
+    margin: 0 5px 15px -5px;
+    width: 100%;
+    color: #ededed;
+}
+
+.contact-info textarea {
+    outline: none;
+    border: 1px solid #444348;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444348;
+    padding: 10px 10px;
+    height: 195px;
+    display: block;
+    margin: 0 5px 15px -5px;
+    width: 100%;
+    color: #ededed;
+}
+
+.button1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #008ed6;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+}
+
+.button1:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff2a;
+}
+
+.submit1 {
+    text-align: right;
+}
+
+/* Contact Form Style end here */
+/* Map section starts from here */
+.map {}
+
+.map iframe {
+    height: 350px;
+    width: 100%;
+}
+
+/* Map section send here */
+footer {
+    background-color: #15141a;
+    padding: 40px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+footer ul li {
+    color: #444348;
+    font-size: 25px;
+    transition: .4s all ease-in-out;
+    margin: 0 15px;
+}
+
+footer ul li:hover {
+    color: #008ed6
+}
+
+footer p{
+    text-align: center;
+    color: #444348;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
